@@ -111,9 +111,11 @@ public class ExtratoServlet extends HttpServlet {
 	private void listar(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		List<Lancamento> listaLancamento = daoLancamento.getAll();
         List<LancamentoCartao> listaLancamentoCartao = daoLancamentoCartao.getAll();
+        List<Categoria> listaCategoria = daoCategoria.getAll();
 
         request.setAttribute("listaLancamento", listaLancamento);
         request.setAttribute("listaLancamentoCartao", listaLancamentoCartao);
+        request.setAttribute("listaCategoria", listaCategoria);
         
  
 		request.getRequestDispatcher("extrato.jsp").forward(request, response);

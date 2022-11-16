@@ -48,7 +48,11 @@
 										<td>
 											<fmt:formatDate value="${lancamento.data.time }" pattern="dd/MM/yyyy"/>
 										</td>
-										<td>${lancamento.categoria }</td>
+										<c:forEach items="${listaCategoria }" var="categoria">
+											<c:if test="${categoria.codigo == lancamento.categoria }">
+												<td>${categoria.nome }</td>
+											</c:if>
+										</c:forEach>
 										<td class="pe-0">
 										<c:url value="extrato" var="link">
 												<c:param name="acao" value="abrir-form-edicao"/>
@@ -77,7 +81,11 @@
 										<td>
 											<fmt:formatDate value="${lancamentoCartao.data.time }" pattern="dd/MM/yyyy"/>
 										</td>
-										<td>${lancamentoCartao.categoria }</td>
+										<c:forEach items="${listaCategoria }" var="categoria">
+											<c:if test="${categoria.codigo == lancamentoCartao.categoria }">
+												<td>${categoria.nome }</td>
+											</c:if>
+										</c:forEach>
 										<td class="pe-0">
 											<c:url value="extrato" var="link">
 												<c:param name="acao" value="abrir-form-edicao"/>
