@@ -1,0 +1,140 @@
+@import url(./createdVar.css);
+
+html,body {
+	height: 100vh;
+	font-family: 'Outfit', sans-serif;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 18px;
+}
+
+/* Login */
+
+.btn {
+	padding: 11px 0;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 18px;
+	height: 45px;
+}
+
+.btn-primary {
+	background-color: var(--primary);
+	border: 1px solid var(--primary);
+	height: 40px;
+	min-width: 50px;
+}
+
+.btn-danger {
+	height: 40px;
+	min-width: 50px
+}
+
+
+.btn-primary:hover, .btn-primary:active, .btn-primary:focus {
+	background-color: var(--primary);
+	border: 1px solid var(--primary);
+	box-shadow: none !important;
+}
+
+.btn-outline-primary {
+	background-color: white;
+	color: #673ab7;
+	border: 1px solid var(--primary);
+	height: 40px;
+}
+
+.btn-outline-primary:hover, .btn-outline-primary:active, .btn-outline-primary:focus {
+	background-color: white;
+	color: var(--primary);
+	border: 1px solid var(--primary);
+	box-shadow: none !important;
+}
+
+.btn-check:checked+.btn{
+	background-color: var(--primary);
+}
+
+.form-control{
+	height: 40px;
+}
+
+.form-control:focus {
+  border: 1px solid var(--primary);
+  box-shadow: 0 .125rem .25rem var(--primary);
+}
+
+.form-control::placeholder {
+	color: var(--light-grey);
+	opacity: 1;
+}
+
+/* Dashboard */
+.mt-n1 {
+  margin-top: -0.25rem !important;
+} 
+
+.mt-n2 {
+  margin-top: -0.5rem !important;
+} 
+
+.mt-n4 {
+  margin-top: -1.5rem !important;
+} 
+
+.mt-n5 {
+  margin-top: -3rem !important;
+} 
+
+
+.btn-info {
+	height: 40px;
+	color: white;
+}
+.btn-info:hover, .btn-info:active, .btn-info:focus {
+	box-shadow: none !important;
+
+	color: white;
+}
+
+/* Conta */
+
+.form-select:focus{
+	box-shadow: 0 .125rem .25rem var(--primary);
+}
+
+.table-primary{
+	--bs-table-color: rgb(255, 255, 255) !important;
+	--bs-table-bg: var(--primary) !important;
+	--bs-table-border-color: var(--primary) !important;
+	--bs-table-striped-bg: var(--primary) !important;
+	--bs-table-striped-color: rgb(255, 255, 255) !important;
+	--bs-table-active-bg: var(--primary) !important;
+	--bs-table-active-color: rgb(255, 255, 255) !important;
+	--bs-table-hover-bg: var(--primary) !important;
+	--bs-table-hover-color: rgb(255, 255, 255) !important;
+	color: var(--bs-table-color) !important;
+	border-color: var(--bs-table-border-color) !important;
+}
+
+.table{
+	--bs-table-striped-bg: #f9f0fe !important;
+}
+
+.table-responsive-sm {
+	overflow-x: auto;
+	overflow-y: auto;
+	max-height:550px !important;
+}
+
+.table-responsive {
+	overflow-x: auto;
+	overflow-y: auto;
+	max-height: 183.3px;
+}
+
+::-webkit-scrollbar{
+	display: none;
+}
+

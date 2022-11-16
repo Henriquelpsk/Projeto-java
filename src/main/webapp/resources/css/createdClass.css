@@ -1,0 +1,124 @@
+
+/* Login */
+a {
+	text-decoration: none;
+	color: #A5A5A5;
+}
+
+a:active, a:visited {
+	color: var(--primary);
+}
+.container-md {
+	max-width: 720px;
+}
+
+/* Dashboard  */
+
+.alinhamento {
+	margin: 0 auto;
+	max-width: 720px;
+}
+
+.container-teste {
+	background-color: var(--primary);
+	max-height: 113px;
+}
+
+.fit {
+	border-radius: 50% 50% 50% 50%;
+	width: 71px;
+	height: 50px;
+}
+
+.nav-img-size {
+	width: 24px;
+	height: 24px;
+}
+
+.fixado {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 60px;
+	background-color: var(--primary);
+}
+
+.bandeira {
+	height: 30px;
+	width: 30px;
+}
+
+.headerAlign {
+	padding:0 25px;
+	max-width: 720px;
+	margin: 0 auto;
+}
+
+.spacing {
+	display: block;
+	height: 74px;
+}
+
+.link-white {
+	color: white;
+}
+
+.link-white:visited, .link-white:active {
+	color: white;
+}
+/* Account */
+.container-conta {
+	background-color: var(--primary);
+	max-height: 60px;
+}
+
+/* Register */
+
+.container-register {
+	background-color: var(--primary);
+	height: 60px;
+}
+
+.second-register {
+	height: 80px;
+	background-color: white;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  margin: 0;
+}
+
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+}
+
+.espacamento{
+	height: 10px;
+}
+
+.th-extrato{
+	height: 58px;
+}
+th{
+	border: none;
+}
+
+td{
+	border: none;
+}
+
+.nome-tabela{
+	background-color: var(--primary);
+	height: 38px;
+	padding: 7px;
+	color: white;
+	font-weight: bold;
+	text-align: center;
+}
+
+.tabela-gerenciamento{
+	width: 239.3px;;
+}
